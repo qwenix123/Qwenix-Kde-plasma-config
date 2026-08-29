@@ -33,7 +33,7 @@
 Скрипт `install_packages.sh` автоматически считывает манифесты из корня репозитория и накатывает окружение:
 
 | Источник | Файл конфигурации | Назначение |
-| :--- | :--- | :--- |
+ :--- | :--- | :--- |
 | **Официальные зеркала (`pacman`)** | `packages.txt` | telegram-desktop discord steam flatpak obs-studio code git
 |
 | **Arch User Repository (`paru` / `yay`)** | `aur-packages.txt` | Пакеты из AUR: ProtonVpn |
