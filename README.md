@@ -2,7 +2,7 @@
 
 # ✦ Qwenix KDE Plasma Config ✦
 
-**Персонализированный, производительный и эстетичный пресет окружения KDE Plasma 6 для CachyOS / Arch Linux.**
+**Персонализированный, минималистичный и производительный рисовый сетап для KDE Plasma 6 на базе CachyOS / Arch Linux.**
 
 [![Arch Linux](https://img.shields.io/badge/Arch_Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
 [![CachyOS](https://img.shields.io/badge/CachyOS-00b4d8?style=for-the-badge&logo=linux&logoColor=white)](https://cachyos.org/)
@@ -11,41 +11,42 @@
 
 <br>
 
-<img src="wallpaper.png" alt="Desktop Preview" width="92%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+<img src="wallpaper.png" alt="Desktop Preview" width="90%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
 
 </div>
 
 ---
 
-### ✨ Особенности сборки
+### ✨ Визуальный стек и оформление
 
-* **Window Decorations:** `Utterly-Round-Dark` — закругленные рамки и macOS-подобные акцентные кнопки управления окнами на движке Aurorae v2.
-* **Color Scheme:** `MkosBigSurDark` — глубокая темная тема с контрастными системными акцентами.
-* **Cursor Theme:** `FossaCursors` — аккуратный сглаженный набор курсоров.
-* **Base Plasma Theme:** `Breeze Dark` — стабильная основа для системных виджетов и трея.
-* **Full Dotfiles:** Автоматическое восстановление раскладки панелей, шорткатов, параметров мыши и конфигов рабочих утилит.
+* **Оконные декорации:** `Utterly-Round-Dark` — закругленные рамки с кастомными кнопками в стиле macOS через движок Aurorae v2.
+* **Цветовая палитра:** `MkosBigSurDark` — контрастная темная тема с акцентными системными цветами.
+* **Тема курсоров:** `FossaCursors` — сглаженные векторные указатели.
+* **Базовая тема:** `org.kde.breezedark.desktop` — надежная системная основа для трея и виджетов.
+* **Обои:** Фирменный бэкграунд `wallpaper.png`, устанавливаемый через D-Bus API Plasma Shell.
+* **Конфигурации:** Автоматическая фиксация раскладки панелей, шорткатов клавиатуры и чувствительности мыши (`kcminputrc`, `kwinrc`, `kglobalshortcutsrc`).
 
 ---
 
-### 📦 Состав пакетов
+### 📦 Устанавливаемые пакеты
 
-Конфиг разделен на три уровня зависимостей для быстрой и чистой установки:
+Скрипт `install_packages.sh` автоматически считывает манифесты из корня репозитория и накатывает окружение:
 
-| Категория | Источник | Основные компоненты |
+| Источник | Файл конфигурации | Назначение |
 | :--- | :--- | :--- |
-| **Системные утилиты и GUI** | Official Repos (`pacman`) | Базовые библиотеки KWin/Plasma, мультимедиа-кодеки, терминал, утилиты мониторинга и файловый менеджер (`packages.txt`) |
-| **Расширения и AUR** | Arch User Repository (`paru` / `yay`) | Кастомные темы оформления, шрифты, дополнительные виджеты панели и специфичные утилиты окружения (`aur-packages.txt`) |
-| **Пользовательский софт** | Flathub (`flatpak`) | Изолированные десктопные приложения, мессенджеры и медиаплееры (`flatpak-packages.txt`) |
+| **Официальные зеркала (`pacman`)** | `packages.txt` | Базовые зависимости KDE, системные утилиты, библиотеки рендеринга и CLI-инструменты |
+| **Arch User Repository (`paru` / `yay`)** | `aur-packages.txt` | Пакеты из AUR: кастомные шрифты, системные виджеты и темы |
+| **Flathub (`flatpak`)** | `flatpak-packages.txt` | Изолированные десктопные приложения, мессенджеры и медиа-софт |
 
-> Точные списки пакетов вынесены в текстовые файлы в корне репозитория и могут быть отредактированы под свои задачи перед запуском.
+> Вы можете изменить состав софта перед установкой, отредактировав соответствующие `.txt` файлы в корне папки.
 
 ---
 
 ### 🚀 Быстрая установка
 
-**Способ 1. Пошаговые команды:**
+Самый надежный способ установки — последовательный запуск команд:
 
-```text
+```bash
 git clone [https://github.com/qwenix123/Qwenix-Kde-plasma-config.git](https://github.com/qwenix123/Qwenix-Kde-plasma-config.git) ~/qwenix-config
 cd ~/qwenix-config
 ./install.sh
