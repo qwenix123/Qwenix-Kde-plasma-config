@@ -34,9 +34,10 @@
 
 | Источник | Файл конфигурации | Назначение |
 | :--- | :--- | :--- |
-| **Официальные зеркала (`pacman`)** | `packages.txt` | Базовые зависимости KDE, системные утилиты, библиотеки рендеринга и CLI-инструменты |
-| **Arch User Repository (`paru` / `yay`)** | `aur-packages.txt` | Пакеты из AUR: кастомные шрифты, системные виджеты и темы |
-| **Flathub (`flatpak`)** | `flatpak-packages.txt` | Изолированные десктопные приложения, мессенджеры и медиа-софт |
+| **Официальные зеркала (`pacman`)** | `packages.txt` | telegram-desktop discord steam flatpak obs-studio code git
+|
+| **Arch User Repository (`paru` / `yay`)** | `aur-packages.txt` | Пакеты из AUR: ProtonVpn |
+| **Flathub (`flatpak`)** | `flatpak-packages.txt` | Sober |
 
 > Вы можете изменить состав софта перед установкой, отредактировав соответствующие `.txt` файлы в корне папки.
 
