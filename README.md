@@ -2,7 +2,7 @@
 
 # ✦ Qwenix KDE Plasma Config ✦
 
-**Персонализированный, минималистичный и функциональный конфиг для KDE Plasma 6 на базе CachyOS / Arch Linux.**
+**Персонализированный, производительный и эстетичный пресет окружения KDE Plasma 6 для CachyOS / Arch Linux.**
 
 [![Arch Linux](https://img.shields.io/badge/Arch_Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
 [![CachyOS](https://img.shields.io/badge/CachyOS-00b4d8?style=for-the-badge&logo=linux&logoColor=white)](https://cachyos.org/)
@@ -11,7 +11,7 @@
 
 <br>
 
-<img src="wallpaper.png" alt="Desktop Preview" width="90%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+<img src="wallpaper.png" alt="Desktop Preview" width="92%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
 
 </div>
 
@@ -19,17 +19,33 @@
 
 ### ✨ Особенности сборки
 
-* **Оформление окон:** Utterly-Round-Dark (закругленные углы и кнопки через движок Aurorae v2).
-* **Цветовая палитра:** MkosBigSurDark.
-* **Курсоры:** FossaCursors.
-* **Базовая тема:** Breeze Dark.
-* **Автоматизация:** Полное восстановление панелей, хоткеев, чувствительности мыши и конфигураций приложений.
+* **Window Decorations:** `Utterly-Round-Dark` — закругленные рамки и macOS-подобные акцентные кнопки управления окнами на движке Aurorae v2.
+* **Color Scheme:** `MkosBigSurDark` — глубокая темная тема с контрастными системными акцентами.
+* **Cursor Theme:** `FossaCursors` — аккуратный сглаженный набор курсоров.
+* **Base Plasma Theme:** `Breeze Dark` — стабильная основа для системных виджетов и трея.
+* **Full Dotfiles:** Автоматическое восстановление раскладки панелей, шорткатов, параметров мыши и конфигов рабочих утилит.
+
+---
+
+### 📦 Состав пакетов
+
+Конфиг разделен на три уровня зависимостей для быстрой и чистой установки:
+
+| Категория | Источник | Основные компоненты |
+| :--- | :--- | :--- |
+| **Системные утилиты и GUI** | Official Repos (`pacman`) | Базовые библиотеки KWin/Plasma, мультимедиа-кодеки, терминал, утилиты мониторинга и файловый менеджер (`packages.txt`) |
+| **Расширения и AUR** | Arch User Repository (`paru` / `yay`) | Кастомные темы оформления, шрифты, дополнительные виджеты панели и специфичные утилиты окружения (`aur-packages.txt`) |
+| **Пользовательский софт** | Flathub (`flatpak`) | Изолированные десктопные приложения, мессенджеры и медиаплееры (`flatpak-packages.txt`) |
+
+> Точные списки пакетов вынесены в текстовые файлы в корне репозитория и могут быть отредактированы под свои задачи перед запуском.
 
 ---
 
 ### 🚀 Быстрая установка
 
-**Универсальная команда (работает везде — Bash, Zsh, Fish):**
+**Способ 1. Пошаговые команды:**
 
-```bash
-git clone https://github.com/qwenix123/Qwenix-Kde-plasma-config.git ~/qwenix-config; and cd ~/qwenix-config; and ./install.sh
+```text
+git clone [https://github.com/qwenix123/Qwenix-Kde-plasma-config.git](https://github.com/qwenix123/Qwenix-Kde-plasma-config.git) ~/qwenix-config
+cd ~/qwenix-config
+./install.sh
