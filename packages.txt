@@ -1,0 +1,7 @@
+git
+telegram-desktop
+discord
+steam
+flatpak
+obs-studio
+code
