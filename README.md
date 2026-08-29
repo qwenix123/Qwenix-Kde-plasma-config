@@ -1,3 +1,4 @@
+cat << 'EOF' > "$HOME/Рабочий стол/qwenix-config/README.md"
 <div align="center">
 
 # ✦ Qwenix KDE Plasma Config ✦
@@ -19,17 +20,17 @@
 
 ### ✨ Особенности сборки
 
-* **Оформление окон:** `Utterly-Round-Dark` (закругленные углы и кнопки через движок Aurorae v2).
-* **Цветовая палитра:** `MkosBigSurDark`.
-* **Курсоры:** `FossaCursors`.
-* **Базовая тема:** `Breeze Dark`.
-* **Автоматизация:** Восстановление расположения панелей, шорткатов клавиатуры и конфигураций приложений из архива.
+* **Оформление окон:** Utterly-Round-Dark (закругленные углы и кнопки через движок Aurorae v2).
+* **Цветовая палитра:** MkosBigSurDark.
+* **Курсоры:** FossaCursors.
+* **Базовая тема:** Breeze Dark.
+* **Автоматизация:** Полное восстановление панелей, хоткеев, чувствительности мыши и конфигураций приложений.
 
 ---
 
 ### 🚀 Быстрая установка
 
-Развертывание всего окружения на чистой системе одной командой:
+**Универсальная команда (работает везде — Bash, Zsh, Fish):**
 
 ```bash
-git clone [https://github.com/qwenix123/Qwenix-Kde-plasma-config.git](https://github.com/qwenix123/Qwenix-Kde-plasma-config.git) ~/qwenix-config && cd ~/qwenix-config && ./install.sh
+bash -c "git clone [https://github.com/qwenix123/Qwenix-Kde-plasma-config.git](https://github.com/qwenix123/Qwenix-Kde-plasma-config.git) ~/qwenix-config && cd ~/qwenix-config && ./install.sh"
