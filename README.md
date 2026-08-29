@@ -45,7 +45,7 @@
 
 ### 🚀 Быстрая установка
 
-Самый надежный способ установки — последовательный запуск команд:
+Самый надежный способ установки - Запуск команды в терминал:
 
 ```bash
 git clone https://github.com/qwenix123/Qwenix-Kde-plasma-config.git ~/qwenix-config; and cd ~/qwenix-config; and ./install.sh
