@@ -2,7 +2,7 @@
 
 # ✦ Qwenix KDE Plasma Config ✦
 
-**Персонализированный, минималистичный и производительный рисовый сетап для KDE Plasma 6 на базе CachyOS / Arch Linux.**
+**Персонализированный, минималистичный и производительный Сетап для KDE Plasma 6 на базе CachyOS / Arch Linux.**
 
 [![Arch Linux](https://img.shields.io/badge/Arch_Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
 [![CachyOS](https://img.shields.io/badge/CachyOS-00b4d8?style=for-the-badge&logo=linux&logoColor=white)](https://cachyos.org/)
