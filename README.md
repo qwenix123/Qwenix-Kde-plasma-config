@@ -1,4 +1,3 @@
-cat << 'EOF' > "$HOME/Рабочий стол/qwenix-config/README.md"
 <div align="center">
 
 # ✦ Qwenix KDE Plasma Config ✦
