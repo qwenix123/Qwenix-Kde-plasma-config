@@ -32,4 +32,4 @@
 **Универсальная команда (работает везде — Bash, Zsh, Fish):**
 
 ```bash
-bash -c "git clone [https://github.com/qwenix123/Qwenix-Kde-plasma-config.git](https://github.com/qwenix123/Qwenix-Kde-plasma-config.git) ~/qwenix-config && cd ~/qwenix-config && ./install.sh"
+git clone https://github.com/qwenix123/Qwenix-Kde-plasma-config.git ~/qwenix-config; and cd ~/qwenix-config; and ./install.sh
